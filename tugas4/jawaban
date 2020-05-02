@@ -1,0 +1,33 @@
+1. select * from Music
+
+2. select m.tittle,m.durasi,g.name,s.name,m.photo,m.deskripsi as "nama genre" from Music m INNER JOIN Genre g INNER JOIN Singers s ON m.id_genre=g.id  and m.id_singer=s.id WHERE id_genre=1
+select m.tittle,m.durasi,g.name,s.name,m.photo,m.deskripsi as "nama genre" from Music m INNER JOIN Genre g INNER JOIN Singers s ON m.id_genre=g.id  and m.id_singer=s.id WHERE id_genre=2
+select m.tittle,m.durasi,g.name,s.name,m.photo,m.deskripsi as "nama genre" from Music m INNER JOIN Genre g INNER JOIN Singers s ON m.id_genre=g.id  and m.id_singer=s.id WHERE id_genre=3
+select m.tittle,m.durasi,g.name,s.name,m.photo,m.deskripsi as "nama genre" from Music m INNER JOIN Genre g INNER JOIN Singers s ON m.id_genre=g.id  and m.id_singer=s.id WHERE id_genre=4
+
+3. select m.tittle,m.durasi,g.name,s.name,m.photo,m.deskripsi as "nama genre" from Music m INNER JOIN Genre g INNER JOIN Singers s ON m.id_genre=g.id  and m.id_singer=s.id WHERE m.id=1
+
+4. INSERT INTO `Music` (`id`, `tittle`, `durasi`, `id_genre`, `id_singer`, `photo`, `deskripsi`) VALUES
+(1, 'april', '03:21', 1, 4, 'https://wikitesti.com/wp-content/uploads/2019/12/april-fiersa-besari.jpg', 'ini adalah lagu'),
+(3, 'separuh aku', '03:22', 2, 2, 'https://cdns.klimg.com/kapanlagi.com/wallpaper/img/noah-6198.jpg', 'ini adalah lagu'),
+(5, 'wanitaku', '03:22', 2, 2, 'https://cdns.klimg.com/kapanlagi.com/wallpaper/img/noah-6198.jpg', 'ini adalah lagu'),
+(6, 'walau habis terang', '03:22', 2, 2, 'https://cdns.klimg.com/kapanlagi.com/wallpaper/img/noah-6198.jpg', 'ini adalah lagu'),
+(7, 'pergilah kasih', '03:22', 3, 3, 'https://assets.pikiran-rakyat.com/crop/0x0:0x0/x/photo/2019/12/03/2617566984.jpg', 'ini adalah lagu'),
+(8, 'diantara kalian', '03:22', 3, 3, 'https://assets.pikiran-rakyat.com/crop/0x0:0x0/x/photo/2019/12/03/2617566984.jpg', 'ini adalah lagu'),
+(9, 'jangan menyerah', '03:22', 3, 3, 'https://assets.pikiran-rakyat.com/crop/0x0:0x0/x/photo/2019/12/03/2617566984.jpg', 'ini adalah lagu'),
+(10, 'bidadari tak bersayap', '03:22', 4, 4, 'https://cdns.klimg.com/dream.co.id/resources/news/2017/12/27/73628/664xauto-unggah-kisah-kegagalan-foto-lama-anji-bikin-gagal-fokus-171227b.jpg', 'ini adalah lagu'),
+(11, 'dia', '03:22', 4, 4, 'https://cdns.klimg.com/dream.co.id/resources/news/2017/12/27/73628/664xauto-unggah-kisah-kegagalan-foto-lama-anji-bikin-gagal-fokus-171227b.jpg', 'ini adalah lagu'),
+(12, 'berhenti di kamu', '03:22', 4, 4, 'https://cdns.klimg.com/dream.co.id/resources/news/2017/12/27/73628/664xauto-unggah-kisah-kegagalan-foto-lama-anji-bikin-gagal-fokus-171227b.jpg', 'ini adalah lagu');
+
+5. INSERT INTO `Genre` (`id`, `name`) VALUES
+(1, 'pop'),
+(2, 'rock'),
+(3, 'metal'),
+(4, 'jazz');
+
+6. INSERT INTO `Singers` (`id`, `name`) VALUES
+(1, 'anji'),
+(2, 'ariel'),
+(3, 'ryan'),
+(4, 'fiersa bersari');
+
