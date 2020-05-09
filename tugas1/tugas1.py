@@ -1,9 +1,14 @@
-def count_handshake(jumlah):
-  t=0
-  for x in range(jumlah-1):
-    t+=x+1
-  return t
-
-print(count_handshake(4))
-print(count_handshake(7))
-
+def hitung(s):
+  index=[]
+  hasil=[]
+  for i,a in enumerate(s+'A'):
+    if a.isupper():
+      index.append(i)
+  a=0
+  for i in index:
+    hasil.append(s[a:i])
+    a=i
+  print(len(hasil))
+  print("terdiri dari")
+  print(hasil)
+hitung('mamaMakanPepayaWaktuBuka')
